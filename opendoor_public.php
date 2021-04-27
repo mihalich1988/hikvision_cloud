@@ -122,7 +122,7 @@ function reauth()
         'cuName'            => 'iPhone Mikhail N',
         'featureCode'       => FC,
         'pushExtJson'       => '{"criticalAlert":"true","language":"en"}',
-        'pushRegisterJson'  => '[{"channel" : 99},{"channel" : 5,"channelRegisterJson":"{\"token\" : \"6192a4a410929ad5d9654e49b6e5da1abe10dfb5a19309582a2ca6c696bccdcb\",\"voipToken\":\"fb53ab84f7db549ce521bd5945cdbffb231c6b655d07218f27460dbbe477a0c8\",\"callTokenType\":0}"}]',
+        'pushRegisterJson'  => '[{"channel" : 99},{"channel" : 5,"channelRegisterJson":"{\"token\" : \"' . PUSH_TOKEN . '\",\"voipToken\":\"' . PUSH_VOIPTOKEN . '\",\"callTokenType\":0}"}]',
         'refreshSessionId'  => $authData['refreshSessionId'],
     ];
 
